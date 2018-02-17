@@ -13,7 +13,7 @@ class GripPipeline:
         """
 
         self.__rgb_threshold_red = [0.0, 123.79330273189422]
-        self.__rgb_threshold_green = [84.08275484210205, 117.20137625424124]
+        self.__rgb_threshold_green = [85.68350203138138, 115.68623051893407]
         self.__rgb_threshold_blue = [0.0, 255.0]
 
         self.rgb_threshold_output = None
@@ -33,11 +33,11 @@ class GripPipeline:
         self.find_contours_output = None
 
         self.__filter_contours_contours = self.find_contours_output
-        self.__filter_contours_min_area = 8500.0
+        self.__filter_contours_min_area = 800.0
         self.__filter_contours_min_perimeter = 0.0
-        self.__filter_contours_min_width = 25.0
+        self.__filter_contours_min_width = 10.0
         self.__filter_contours_max_width = 200.0
-        self.__filter_contours_min_height = 100.0
+        self.__filter_contours_min_height = 75.0
         self.__filter_contours_max_height = 900.0
         self.__filter_contours_solidity = [0, 100]
         self.__filter_contours_max_vertices = 99999.0
